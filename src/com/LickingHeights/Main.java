@@ -5,9 +5,7 @@ import java.util.Scanner;
 public class Main {
 
     public static void main(String[] args) {
-        //1)prints hello world 2)returns hello with a name they type 3)multiplies
-        //and returns two numbers 4)same but divides 5)method that finds the max
-        //double between numbers 6)switch words
+        //4)same but divides 5)method that finds the max double between numbers 6)switch words
 
         //declare
         Scanner keyboard;
@@ -19,19 +17,28 @@ public class Main {
         System.out.println("What is your name?");
         name = keyboard.nextLine();
         helloName(name);
-
+        int a = 5;
+        int b = 7;
+        System.out.println("5*7 is " + multiply(a,b));
 
         }
 
         public static void printGreeting(String word){
-            System.out.println("hello " + word);
+
+        System.out.println("hello " + word);
         }
 
-        public static void helloName(String name){
-            System.out.println("hello " + name);
+        public static String helloName(String name){
+        System.out.println("hello " + name);
+        return name;
         }
 
+        public static int multiply(int firstNumber, int secondNumber){
+        int answer = firstNumber*secondNumber;
+        return answer;
+        }
 
+        
 
     }
 
