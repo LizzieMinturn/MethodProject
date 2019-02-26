@@ -20,6 +20,9 @@ public class Main {
         int a = 5;
         int b = 7;
         System.out.println("5*7 is " + multiply(a,b));
+        int c = 15;
+        int d = 3;
+        System.out.println("15/3 is " + divide(c,d));
 
         }
 
@@ -38,7 +41,10 @@ public class Main {
         return answer;
         }
 
-        
+    public static int divide(int firstNumber, int secondNumber){
+        int answer = firstNumber/secondNumber;
+        return answer;
+        }
 
     }
 
