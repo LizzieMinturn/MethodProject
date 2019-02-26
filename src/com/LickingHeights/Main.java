@@ -5,11 +5,14 @@ import java.util.Scanner;
 public class Main {
 
     public static void main(String[] args) {
-        //4)same but divides 5)method that finds the max double between numbers 6)switch words
+        //5)method that finds the max double between numbers 6)switch words
 
         //declare
         Scanner keyboard;
         String name;
+        String wordA;
+        String wordB;
+
         //initialize
         keyboard = new Scanner(System.in);
 
@@ -23,11 +26,13 @@ public class Main {
         int c = 15;
         int d = 3;
         System.out.println("15/3 is " + divide(c,d));
+        wordA = "hello";
+        wordB = "world";
+        Switch(wordA,wordB);
 
         }
 
         public static void printGreeting(String word){
-
         System.out.println("hello " + word);
         }
 
@@ -37,13 +42,19 @@ public class Main {
         }
 
         public static int multiply(int firstNumber, int secondNumber){
-        int answer = firstNumber*secondNumber;
-        return answer;
+        return firstNumber*secondNumber;
         }
 
     public static int divide(int firstNumber, int secondNumber){
-        int answer = firstNumber/secondNumber;
-        return answer;
+        return firstNumber/secondNumber;
+        }
+
+        public static int max(int firstNumber, int secondNumber) {
+
+        }
+
+        public static void Switch(String wordA, String wordB){
+        System.out.println(wordB + " " + wordA);
         }
 
     }
