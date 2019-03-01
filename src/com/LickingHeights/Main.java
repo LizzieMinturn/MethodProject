@@ -16,7 +16,7 @@ public class Main {
         printGreeting("world");
         System.out.println("What is your name?");
         name = keyboard.nextLine();
-        helloName(name);
+        System.out.println(helloName(name));
         int a = 5;
         int b = 7;
         System.out.println("5*7 is " + multiply(a,b));
@@ -36,7 +36,7 @@ public class Main {
 
         public static String helloName(String name){
 
-        return "hello "+name;
+        return"hello "+ name;
         }
 
         public static int multiply(int firstNumber, int secondNumber){
